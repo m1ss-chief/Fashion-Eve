@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7dfd8; /* Light cream color */
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.logo {
+    max-width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.icon {
+    width: 150px;;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.typewriter {
+    
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: #000000;
+    margin: 20px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    
+    overflow-wrap: break-word;
+    border-right: 2px solid #333;
+    animation:normal 4s steps(40, end), blink 0.5s step-end infinite alternate;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #785a3c;
+}
+
+/* Goodbye Section */
+#goodbye {
+    padding: 300px 20px 0px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* Responsive columns */
+    gap: 60px;                      /* Space between grid items */
+    justify-content: space-between; /* Equal spacing between items */
+    padding: 20px;                  /* Padding for container */
+}
+
+.grid-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+}
+h4 {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #333;
+}
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: #333; }
+}

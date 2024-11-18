@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7dfd8;
+    scroll-behavior: smooth;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between; /* Adds space between the blocks */
+    align-items: center;
+}
+
+.container img, 
+div img {
+    max-width: 90%;
+    height: auto; /* Ensures the image scales proportionally */
+}
+/* #selection-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    max-width: 300px;/
+} */
+h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+
+}
+form {
+    background: #ccae88;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 2px solid #e2d9d0; /* Beige border */
+}
+
+label, select, input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+select, input {
+    padding: 10px 0;
+    border: 1px solid #785a3c;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+button:hover {
+    background-color: #785a3c;
+}
+
+#measurement {
+    background-color: #785a3c;
+}
