@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Dress Stitched</title>
+    <link rel="stylesheet" href="/CSS files/get-your-dress.css">
+    <script defer src="/JS files/script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="get-your-dress.html">Measurement Form</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1><strong>GET YOU DRESS STICHED</strong></h1>
+        <div class="container">
+        <div>
+            <img src="/images/dress-boy.png">
+        </div>
+        <div>
+            <form id="selection-form">
+                <h2><strong>Make your Choices:</strong></h2>            
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="category">Clothing Category:</label>
+                <select id="category">
+                    <option value="topwear">Top Wear</option>
+                    <option value="bottomwear">Bottom Wear</option>
+                </select>
+                <label for="fabric">Fabric Type:</label>
+                <select id="fabric">
+                    <option value="cotton">Cotton</option>
+                    <option value="silk">Silk</option>
+                    <option value="linen">Linen</option>
+                    <option value="velvet">Velvet</option>
+                    <option value="rayon">Rayon</option>
+                    <option value="georgette">Georgette</option>
+                </select>
+                <label for="occasion">Occasion:</label>
+                <select id="occasion">
+                    <option value="casual">Casual</option>
+                    <option value="festive">Festive</option>
+                    <option value="party">Party</option>
+                    <option value="formal">Formal</option>
+                    <option value="wedding">Wedding</option>
+                </select>
+                
+                <button type="button" onclick="scrollToSection('#measurement')">Give Your Measurement</button>
+                
+            </form>
+        </div>
+        <div>
+            <img src="/images/dress-girl.png">
+        </div>
+    </div>
+    </section>
+
+    <section id="measurement" class="measure">
+        <h1 style="color: #e7dfd8;"><strong>MEASUREMENT FORM</strong></h1>
+        <br>
+        <br>
+        <div class="mea">
+            <div>
+                <form id="customer-details" style="display:flexbox">
+                    <h2><strong>Customer Deatils:</strong></h2>
+                    <input type="text" placeholder="Name" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="success-message" style="display: none; color: green; font-weight: bold; text-align: center;">Submitted Successfully!</p>
+
+            
+                <br>
+                <br>
+            
+                <form id="body-measurement" style="display: flexbox;">
+                    <h2><strong>Body Measurement:</strong></h2>
+                    <img src="/images/dress-tape.png" style="max-width: 40%;">
+                    <input type="number" placeholder="Length" required>
+                    <input type="number" placeholder="Chest Size" required>
+                    <input type="number" placeholder="Waist Size" required>
+                    <input type="number" placeholder="Hips Size" required>
+                    <input type="number" placeholder="Shoulder Size" required>
+                    <input type="number" placeholder="Sleeves Size" required>
+                    <input type="number" placeholder="Neck Size" required>
+                    <input type="number" placeholder="Wrist Circumference" required>
+                    <input type="number" placeholder="Ankle Circumference" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
+
+
